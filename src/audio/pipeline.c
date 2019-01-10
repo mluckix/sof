@@ -142,6 +142,8 @@ static void disconnect_upstream(struct pipeline *p, struct comp_dev *start,
 	tracev_pipe_with_ids(p, "disconnect_upstream(), current->comp.id = %u",
 			     current->comp.id);
 
+	tracev_pipe_with_ids(p, "test");
+
 	/* complete component init */
 	current->pipeline = NULL;
 
